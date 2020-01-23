@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <style>
+     .bod
+     {
+         
+         color:gold;
+         margin-top:2%;
+         margin-left:20%;
+         margin-right: 20%;
+         padding-bottom: 50px;
+         padding-top: 50px;
+         padding-right:10%;
+         padding-left: 10%;
+         background-color: rgba(0,0,0, 0.7);
+         border-radius: 40px;
+     }
+     body
+{
+background-image: url('bg2.jpg');
+background-size: cover;
+background-attachment: fixed;
+
+
+}
+.small
+{
+  height: 200px;
+  width: 200px;
+}
+     </style>
+     
+    <title>Login</title>
+  </head>
+  <body>
+    <script>alert("Password is pranav1999")</script>
+      <script>
+        
+          function validpass()
+          {
+            var pass=document.getElementById("pass");
+           if(pass.value=="pranav1999")
+           {
+           alert("You have successfully logged in");
+           return true;
+           }
+           else
+           {
+             pass.focus();
+             alert("The password is incorrect");
+             return false;
+           }
+          }
+          </script>
+          <center><img src="icon.jpg" class="small"></center>
+    <div class="bod">
+     
+        <form action="homepage.html" class="was-validated" onsubmit="return validpass()" >
+                <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="example@example.com" required >
+                        <div class="valid-feedback">Valid email</div>
+                  <div class="invalid-feedback">Please fill out a valid email</div>
+                      </div>
+                      
+                      <div class="form-group">
+                            <label for="pass">Password</label>
+                            <input type="password" name="pass" id="pass" class="form-control" minlength="6" placeholder="Enter here" aria-describedby="helpId" required >
+                            
+                     
+                    </div>
+
+                     <center> <input type="submit" class="btn btn-warning"  > </center>
+                  
+
+
+
+        </form>
+
+
+
+
+
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
